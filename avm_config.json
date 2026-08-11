@@ -1,0 +1,32 @@
+{
+    "model_name": "Similarity-Based Local AVM + Comparable Reconciliation",
+    "model_version": "AVM Production v1.0",
+    "target": "price_in_rp",
+    "model_n_features": [
+        "land_size_m2",
+        "building_size_m2",
+        "building_land_ratio",
+        "bedrooms",
+        "bathrooms",
+        "lat",
+        "long"
+    ],
+    "similarity_features": [
+        "land_size_m2",
+        "building_size_m2",
+        "building_land_ratio",
+        "bedrooms",
+        "bathrooms",
+        "lat",
+        "long"
+    ],
+    "n_neighbors": 150,
+    "n_trees": 150,
+    "weight_model_n": 0.8,
+    "weight_comparable": 0.2,
+    "default_n_comparables": 5,
+    "price_type": "asking_price",
+    "currency": "IDR",
+    "production_observations": 674,
+    "disclaimer": "This is an AVM asking-price indication. It is not a final Market Value conclusion. Professional appraisal review remains required."
+}
